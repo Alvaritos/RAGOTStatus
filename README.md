@@ -6,7 +6,7 @@ This system is based on Wrzasq POT library
 Example
 =======
 
-<code>
+```php
 include_once('RAGBuffer.php');
 include_once('RAGServer.php');
 include_once('RAGHandler.php');
@@ -30,7 +30,7 @@ foreach ($status->players as $name => $level) {
 
 	echo '<li>'.$name.' ('.$level.')</li>';
 }
-</code>
+```
 
 
 Credits

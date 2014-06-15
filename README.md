@@ -3,6 +3,44 @@ Advanced OTServer status
 
 This system is based on Wrzasq POT library
 
+System uses a custom BufferedReader / Writter. It sends a packet to the desired OTServer
+To get any information you may need to also send flags to the server, heres the list
+
+```php
+const REQUEST_BASIC_SERVER_INFO = 1;
+
+/**
+* Server owner info.
+*/
+const REQUEST_OWNER_SERVER_INFO = 2;
+
+/**
+* Server extra info.
+*/
+const REQUEST_MISC_SERVER_INFO = 4;
+
+/**
+* Players stats info.
+*/
+const REQUEST_PLAYERS_INFO = 8;
+
+/**
+* Map info.
+*/
+const REQUEST_MAP_INFO = 16;
+
+/**
+* Extended players info.
+*/
+const REQUEST_EXT_PLAYERS_INFO = 32;
+
+/**
+* Player status info.
+*/
+const REQUEST_PLAYER_STATUS_INFO = 64;
+```
+
+
 Example
 =======
 
@@ -37,4 +75,5 @@ Credits
 ========
 
 Raggaer
+
 Wrzasq (POT Library)
